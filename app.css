@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Proxima+Nova');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 html {
-    font-family: Proxima Nova !important;
+    font-family: Montserrat !important;
 }
 
 .topNav {
     color: rgba(40, 48, 0, 0.61);
     font-size: 12px;
-    font-family: Proxima Nova;
     font-weight: 400;
     word-wrap: break-word
 }
@@ -18,7 +17,6 @@ html {
 .mainNav {
     color: black;
     font-size: 20px;
-    font: Proxima Nova;
     font-weight: 700;
     word-wrap: break-word;
 }
@@ -33,7 +31,6 @@ html {
     position: absolute;
     color: black;
     font-size: 48px;
-    font: Proxima Nova sans-serif;
     font-weight: 700;
     word-wrap: break-word;
 }
@@ -44,7 +41,6 @@ html {
     position: absolute;
     color: black;
     font-size: 16px;
-    font: Proxima Nova;
     font-weight: 400;
     word-wrap: break-word;
     font-size: 16px;
@@ -57,7 +53,6 @@ html {
     position: absolute;
     color: black;
     font-size: 16px;
-    font: Proxima Nova;
     font-weight: 400;
     word-wrap: break-word;
     font-size: 16px;
@@ -67,7 +62,6 @@ html {
 .footerLinks {
     color: black;
     font-size: 12px;
-    font: Proxima Nova;
     font-weight: 700;
     word-wrap: break-word;
     left: 104px;
@@ -85,7 +79,6 @@ html {
 }
 
 #footerBar {
-    font: Proxima Nova;
     width: 100%;
     height: 50px;
     left: 0px;
@@ -117,7 +110,6 @@ a {
     position: absolute;
     color: white;
     font-size: 16px;
-    font: Proxima Nova;
     font-weight: 700;
     word-wrap: break-word;
 }
@@ -125,7 +117,6 @@ a {
 .btnFont2 {
     color: white;
     font-size: 16px;
-    font: Proxima Nova;
     font-weight: 700;
     word-wrap: break-word;
 }
