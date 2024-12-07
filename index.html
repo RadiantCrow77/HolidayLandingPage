@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 
 <head>
     <title>Holiday Landing Page</title>
     <meta-charset="utf-8">
+
         <link rel="stylesheet" href="app.css">
+        <!-- <link rel="stylesheet" href="login.css"> -->
         <link href='https://fonts.googleapis.com/css2?family=Montserrat' rel='stylesheet' type='text/css'>
+        <!-- <script src="login.js"></script> -->
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script> -->
+        <!-- $(function() { $("#includedContent").load("login.html"); }); -->
+        <!-- </script> -->
 
 </head>
 
+
 <body>
+
+    <div id="includedContent"></div>
     <div style="width: 1440px; height: 1024px; position: relative; background: white">
         <!-- Right and Top Left Holiday Images -->
         <img style="width: 325px; height: 74px; left: 1035px; top: 136px; position: absolute; opacity: 0.50; border-radius: 10px" src="https://github.com/RadiantCrow77/holidaypage/blob/main/BG_RIGHT.png?raw=true" />
@@ -74,13 +86,18 @@
                 <div class=footerDiv><a href="https://www.iccu.com/loans/visa-credit-cards/visa-rewards-program/#redeem">REDEEM</a></div>
             </ul>
         </div>
-        <!-- Login Btn -->
+        <!-- Login Btn -- this is important -->
         <div style="width: 142px; height: 40px; left: 1218px; top: 21px; position: absolute">
-            <button class=btn><div class=btnFont>eBranch Login<div>
+            <!-- <button id="btn" onclick="openLoginForm()"><div class=btnFont>eBranch Login<div>  -->
+            <button id="btn" onclick="log()"><div class=btnFont>eBranch Login<div> 
+                <!-- changed class to id to see if it works -->
+
       </button>
         </div>
 
     </div>
 </body>
+
+<script src="login.js"></script>
 
 </html>
