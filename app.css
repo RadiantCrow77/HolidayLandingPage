@@ -104,6 +104,23 @@ a {
     border-radius: 10px;
 }
 
+#btn2 {
+    padding-top: 11px;
+    padding-bottom: 10px;
+    padding-left: 21px;
+    padding-right: 24.80px;
+    left: 849px;
+    top: 353px;
+    position: absolute;
+    background: #1C8900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+}
+
 .btnFont {
     left: 18px;
     top: 10px;
@@ -121,12 +138,12 @@ a {
     word-wrap: break-word;
 }
 
-.btnFont2:hover {
+#btn:hover {
     background: #135c00;
     cursor: pointer;
 }
 
-#btn:hover {
+#btn2:hover {
     background: #135c00;
     cursor: pointer;
 }
