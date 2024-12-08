@@ -121,10 +121,12 @@ a {
     word-wrap: break-word;
 }
 
-.btn:hover {
-    background: #135c00;
-}
-
 .btnFont2:hover {
     background: #135c00;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background: #135c00;
+    cursor: pointer;
 }
