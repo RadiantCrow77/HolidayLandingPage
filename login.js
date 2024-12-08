@@ -1,41 +1,23 @@
-// eBranch Login event listener
-// let login = document.getElementsByClassName("btn");
-// const buttons = document.getElementsByClassName("btn").addEventListener("click", openLoginForm);
+// eBranch Login event listener, OLD
 
+// let login = document.getElementById("btn");
 
-// buttons[0].addEventListener("click", function() {
-//     openLoginForm();
-// });
-
-// let login = document.getElementsByClassName("btn")[0];
-// let login = document.getElementsByClassName("btn");
-let login = document.getElementById("btn");
-
-//test, apparently need to wrap code in f(x)
-
-login.onclick = function log() {
-    console.log("clicked login btn");
-}
-
-// login.onclick = log();
-
-//actual
-// login.onclick = openLoginForm();
-
-
-
-function openLoginForm() {
-    document.body.classList.add("showLoginForm");
-}
-
-function closeLoginForm() {
-    document.body.classList.remove("showLoginForm");
-}
-
-
-
-// const modal = document.querySelector('#btn');
-
-// function log() {
-//     console.log('clicked');
+// login.onclick = function openLoginForm() {
+//     document.body.classList.add("showLoginForm");
 // }
+
+
+
+// eBranch Login event listener
+// grab myModal and btn by ID from HTML
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("btn");
+let closeBtn = document.getElementsByClassName("close")[0];
+
+btn.onclick = function openLoginForm() {
+    modal.style.display = "block";
+}
+
+closeBtn.onclick = function closeLoginForm() {
+    modal.style.display = "none";
+}
