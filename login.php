@@ -19,32 +19,11 @@ session_start();
         die("Error -- Connection has failed: ". mysqli_connect_error());
     }
 
-// Valid login authentication
-// $query = "SELECT * FROM users WHERE username='$username' AND password='$password'"; // from users table
-// $result = $connection->query($query);
-
-// if($result->num_rows==1){
-//     // Login was succesful
-//     header("Location: success.html");
-//     exit();
-// if(isset($_SESSION['username'])){ // trying here!!!!!!!!!!!!!
-//     $username = $_SESSION['username'];
-//     header("Location: success.html");
-//     exit();
-// }else{
-//     // Login failed
-//     header("Location: error.html");
-//     exit();
-// }
-
-// $connection->close();
-// }
-
 if( !isset($_POST['username'], $_POST['password'])){
     exit("Please enter both username and password.");
 }
 
-//atemping to debug usernamne and passsword being properly grabbed from text boxes.
+//atemping to debug username and password being properly grabbed from text boxes
 // if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 //     foreach ($_POST as $key => $value) {
 //         echo "Key: $key, Value: $value<br>";
@@ -63,12 +42,10 @@ if($stmt = $connection->prepare('SELECT id,password FROM users WHERE username=?'
     if ($stmt->num_rows > 0) {
         $stmt->bind_result($id, $password);
         $stmt->fetch();
-        // Account exists, now we verify the password.
-        // Note: remember to use password_hash in your registration file to store the hashed passwords.
+        // Account exists, now verify pw
         if ($_POST['password'] === $password) {
-            // (password_verify($_POST['password'], $password))
             // Verification success! User has logged-in!
-            // Create sessions, so we know the user is logged in, they basically act like cookies but remember the data on the server.
+            // Create sessions to verify that user has logged in
             session_regenerate_id();
             $_SESSION['loggedin'] = TRUE;
             $_SESSION['name'] = $_POST['username'];
