@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="app.css">
         <link rel="stylesheet" href="login.css">
         <a href="login.html"></a>
-
+        <a href="login.php"></a>
         <link href='https://fonts.googleapis.com/css2?family=Montserrat' rel='stylesheet' type='text/css'>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -92,30 +92,34 @@
         </div>
 
         <!-- Login Modal Here -->
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <div class="close">x</div>
-                <div class="form">
+        <form action="login.php" method="POST">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="close">x</div>
+
                     <div class="avatar">
                         <img style="width: 220px; height: 86px;" src="https://www.iccu.com/file/img/logos/ICCU/green.png" alt="">
                     </div>
                     <div class="element">
                         <label for="username">Username</label>
-                        <input type="text" id="username">
+                        <input type="text" id="username" name="username">
                     </div>
                     <div class="element">
                         <label for="password">Password</label>
-                        <input type="text" id="password">
+                        <input type="text" id="password" name="password">
                         <div class="element">
-                            <button id="logBtn">Log in</button>
+
+                            <button id="logBtn" type="submit">Log in</button>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+    </div>
+    </form>
 
-        <script src="login.js"></script>
-        <!-- remember to place JS scripts at the end such that HTML gets parsed first -->
+    <script src="login.js"></script>
+    <!-- remember to place JS scripts at the end such that HTML gets parsed first -->
 </body>
 
 
